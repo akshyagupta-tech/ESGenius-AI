@@ -88,7 +88,7 @@ elif page == "ESG Data":
         st.success("CSV uploaded successfully!")
 
         st.write("### Preview")
-        st.dataframe(df, use_container_width=True)
+        st.dataframe(df, width="stretch")
 
         st.write("### Dataset Information")
 
