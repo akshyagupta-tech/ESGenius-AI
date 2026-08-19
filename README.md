@@ -2,77 +2,97 @@
 
 ### AI-Powered ESG Reporting & Sustainability Intelligence Platform
 
-ESGenius AI is an AI-powered sustainability intelligence platform designed
-to simplify ESG data analysis and help organizations transform ESG data
-into meaningful insights.
+ESGenius AI is an AI-powered sustainability intelligence platform that
+helps organizations transform ESG data into understandable insights,
+visual analytics, sustainability recommendations, and reporting support.
 
-The platform combines an interactive Streamlit dashboard, data analysis,
-visualizations, and Google's Gemini AI to support faster and more
-intelligent ESG reporting.
+The platform combines an interactive Streamlit dashboard, structured ESG
+data analysis, interactive visualizations, and Google's Gemini AI to
+reduce the effort required to interpret ESG information and identify
+areas that may require attention.
+
+---
+
+## 🎯 Why ESGenius AI?
+
+Organizations collect ESG information across multiple areas such as
+carbon emissions, energy consumption, renewable energy, workforce
+indicators, waste, and governance.
+
+The challenge is not only collecting this information — it is turning
+the data into insights that people can understand and act upon.
+
+ESGenius AI follows a simple workflow:
+
+**ESG Data → Data Analysis → Visualization → AI Insights → Recommendations**
+
+This provides a practical way to move from raw sustainability data
+towards decision-oriented insights.
 
 ---
 
 ## 🚀 Key Features
 
-- 📊 Interactive ESG data dashboard
-- 🌱 Environmental, Social and Governance analysis
-- 🤖 AI-powered ESG insights using Google Gemini
-- 📈 Interactive data visualizations
-- 🔎 ESG performance analysis
-- 💡 AI-generated sustainability recommendations
-- 📋 Data-driven ESG reporting support
-- ⚡ Simple and user-friendly interface
+### 📊 ESG Performance Dashboard
 
----
+Provides an overview of ESG performance through:
 
-## 🎯 Problem Statement
+- Overall ESG score
+- Environmental performance
+- Social performance
+- Governance performance
+- Sustainability KPIs
+- Interactive charts and visualizations
 
-Organizations generate ESG data across different areas such as energy,
-emissions, workforce, waste, and governance.
+### 📁 ESG Data Management
 
-However, ESG reporting can become difficult because data may be:
+Users can upload ESG datasets in CSV format.
 
-- Fragmented across different sources
-- Difficult to analyze manually
-- Time-consuming to prepare
-- Difficult to interpret
-- Challenging to convert into actionable insights
+The platform can:
 
-Traditional manual processes can increase reporting effort and make it
-harder for organizations to make timely sustainability decisions.
+- Read uploaded ESG data
+- Display dataset previews
+- Show row and column counts
+- Analyze available ESG indicators
+- Support data-driven visualization
 
----
+### 🤖 AI-Powered ESG Insights
 
-## 💡 Our Solution
+Google Gemini AI can be used to analyze ESG information and provide:
 
-ESGenius AI provides a centralized interface where ESG information can
-be analyzed and converted into understandable sustainability insights.
+- ESG performance observations
+- Potential sustainability concerns
+- Trend interpretation
+- Risk indicators
+- Improvement opportunities
+- Action-oriented recommendations
 
-The platform combines:
+### 📈 Interactive Visualization
 
-**ESG Data → Analysis → Visualization → AI Insights → Actionable Recommendations**
+Plotly-powered visualizations help users understand ESG performance
+without relying only on raw numbers.
 
-This helps users understand ESG performance more efficiently and
-identify areas that may require attention.
+### 💡 Sustainability Recommendations
 
----
+The platform converts identified ESG areas into understandable
+recommendations that can help users determine what should be monitored
+or improved.
 
-## 🤖 AI Integration
+### 📄 ESG Reporting Support
 
-ESGenius AI integrates Google's Gemini AI through the Google GenAI SDK.
+ESGenius AI provides structured reporting support by organizing ESG
+information into Environment, Social, and Governance sections.
 
-The AI component is designed to analyze ESG-related information and
-generate useful insights and recommendations.
+Supported framework options include:
 
-AI can assist users by:
+- GRI
+- SASB
+- TCFD
+- CSRD
+- ISSB
 
-- Interpreting ESG information
-- Identifying potential sustainability concerns
-- Generating insights
-- Providing recommendations
-- Supporting ESG decision-making
-
-Human review remains important when using AI-generated ESG insights.
+> Framework selection provides reporting structure and should not be
+> treated as automatic compliance certification.
 
 ---
 
@@ -82,8 +102,9 @@ Human review remains important when using AI-generated ESG insights.
 
 Examples include:
 
-- Energy consumption
 - Carbon emissions
+- Energy consumption
+- Renewable energy
 - Water usage
 - Waste management
 - Environmental performance
@@ -92,9 +113,10 @@ Examples include:
 
 Examples include:
 
-- Workforce-related information
-- Employee indicators
-- Diversity and inclusion
+- Workforce indicators
+- Employee diversity
+- Employee well-being
+- Workplace practices
 - Social responsibility
 
 ### 🏛️ Governance
@@ -104,32 +126,32 @@ Examples include:
 - Compliance
 - Risk management
 - Ethics
+- Transparency
 - Governance practices
 
 ---
 
-## 🛠️ Technology Stack
+## 🤖 AI Integration
 
-| Technology | Purpose |
-|------------|---------|
-| Python | Core application development |
-| Streamlit | Web application and dashboard |
-| Google Gemini | AI-powered ESG analysis |
-| Google GenAI SDK | Gemini API integration |
-| Pandas | Data processing and analysis |
-| Plotly | Interactive visualizations |
-| Python-dotenv | Environment variable management |
+ESGenius AI integrates Google's Gemini AI through the Google GenAI SDK.
 
----
+The AI layer is intended to support ESG analysis by interpreting
+structured ESG information and generating human-readable insights and
+recommendations.
 
-## 📁 Project Structure
+### AI workflow
 
 ```text
-ESGenius-AI/
-│
-├── app.py
-├── requirements.txt
-├── README.md
-├── .gitignore
-├── .env
-└── .venv/
+Uploaded ESG Data
+       ↓
+Data Processing
+       ↓
+ESG Metrics & Trends
+       ↓
+Gemini AI Analysis
+       ↓
+Insights
+       ↓
+Risks / Opportunities
+       ↓
+Recommended Actions
